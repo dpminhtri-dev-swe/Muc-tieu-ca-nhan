@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2e9">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23345b49'/%3E%3Cpath d='M10 21 21 10M13 10h8v8' stroke='%23f0c75e' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Nhịp tiến — Mục tiêu cá nhân</title>
+  <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Nhịp tiến - Trang chủ">
+        <span class="brand-mark">↗</span>
+        <span><strong>nhịp tiến</strong><small>personal progress desk</small></span>
+      </a>
+      <div class="topbar-actions">
+        <span class="privacy-note"><span class="status-dot"></span>Dữ liệu chỉ lưu trên máy</span>
+        <button class="icon-button" id="clear-data" title="Xóa dữ liệu cục bộ" aria-label="Xóa dữ liệu cục bộ">⋯</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro-section">
+        <div>
+          <p class="section-kicker">BẢNG ĐIỀU KHIỂN CÁ NHÂN <span>•</span> <span id="today-label"></span></p>
+          <h1>Điều quan trọng<br><em>đang tiến lên.</em></h1>
+          <p class="intro-copy">Một nơi yên tĩnh để biến những điều bạn muốn làm thành những bước có thể bắt đầu ngay hôm nay.</p>
+        </div>
+        <div class="intro-orbit" aria-hidden="true"><span></span><span></span><span></span><b>01</b></div>
+      </section>
+
+      <section class="summary-grid" aria-label="Tổng quan tiến độ">
+        <article class="summary-card summary-primary">
+          <div class="summary-label"><span class="summary-icon">✦</span><span>Tổng tiến độ</span></div>
+          <strong id="progress-label">0% tổng tiến độ</strong>
+          <div class="summary-progress"><span id="progress-value"></span></div>
+          <p>Tiến bộ nhỏ vẫn là tiến bộ.</p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-label"><span class="summary-icon muted">◎</span><span>Đang theo đuổi</span></div>
+          <strong id="active-count">0</strong>
+          <p>mục tiêu đang mở</p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-label"><span class="summary-icon warm">✓</span><span>Đã hoàn thành</span></div>
+          <strong id="completed-count">0</strong>
+          <p>cột mốc đã đi qua</p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-label"><span class="summary-icon lavender">◌</span><span>Tổng mục tiêu</span></div>
+          <strong id="goal-count">0</strong>
+          <p>ý tưởng đang có hình hài</p>
+        </article>
+      </section>
+
+      <div class="workspace-grid">
+        <aside class="left-column">
+          <section class="panel today-panel">
+            <div class="panel-heading"><div><span class="section-kicker">NHỊP HÔM NAY</span><h2>Việc gần nhất</h2></div><span class="panel-mark">01</span></div>
+            <div id="today-list" class="today-list"></div>
+            <p id="today-empty" class="soft-empty">Chưa có mục tiêu gần hạn. Bạn có thể bắt đầu bằng một mục tiêu nhỏ.</p>
+          </section>
+
+          <section class="panel add-panel">
+            <div class="panel-heading"><div><span class="section-kicker">BẮT ĐẦU TỪ ĐÂY</span><h2 id="form-title">Thêm mục tiêu mới</h2></div><span class="plus-mark">+</span></div>
+            <form id="goal-form" class="goal-form">
+              <label class="field full"><span>Tên mục tiêu</span><input id="goal-title" required placeholder="Ví dụ: Hoàn thành portfolio cá nhân"></label>
+              <label class="field full"><span>Mô tả ngắn <i>(không bắt buộc)</i></span><textarea id="goal-description" rows="3" placeholder="Vì sao điều này quan trọng với bạn?"></textarea></label>
+              <div class="form-row">
+                <label class="field"><span>Loại mục tiêu</span><select id="goal-type"><option value="short">Ngắn hạn</option><option value="long">Dài hạn</option></select></label>
+                <label class="field"><span>Ưu tiên</span><select id="goal-priority"><option value="high">Cao</option><option value="medium" selected>Vừa</option><option value="low">Thấp</option></select></label>
+              </div>
+              <label class="field full"><span>Hạn hoàn thành <i>(không bắt buộc)</i></span><input id="goal-due-date" type="date"></label>
+              <div class="form-actions"><button class="primary-button" type="submit">Lưu mục tiêu <span>↗</span></button><button class="text-button" id="cancel-edit" type="button" hidden>Hủy chỉnh sửa</button></div>
+            </form>
+          </section>
+        </aside>
+
+        <section class="main-column">
+          <section class="panel goals-panel">
+            <div class="panel-heading goals-heading"><div><span class="section-kicker">BỨC TRANH LỚN</span><h2>Mục tiêu của bạn</h2></div><span class="goal-count-label"><span id="goal-count-copy">0</span> mục tiêu</span></div>
+            <div class="filters">
+              <label class="search-field"><span>⌕</span><input id="goal-search" placeholder="Tìm mục tiêu..."></label>
+              <select id="filter-status" aria-label="Lọc theo trạng thái"><option value="">Mọi trạng thái</option><option value="active">Đang làm</option><option value="overdue">Quá hạn</option><option value="completed">Đã xong</option></select>
+              <select id="filter-type" aria-label="Lọc theo loại"><option value="">Mọi loại</option><option value="short">Ngắn hạn</option><option value="long">Dài hạn</option></select>
+              <select id="filter-priority" aria-label="Lọc theo ưu tiên"><option value="">Mọi ưu tiên</option><option value="high">Ưu tiên cao</option><option value="medium">Ưu tiên vừa</option><option value="low">Ưu tiên thấp</option></select>
+            </div>
+            <div id="goal-list" class="goal-list"></div>
+            <div id="empty-state" class="empty-state" hidden><span class="empty-illustration">○</span><h3>Chưa có mục tiêu phù hợp</h3><p>Hãy thử đổi bộ lọc hoặc thêm một mục tiêu mới ở bên trái.</p></div>
+          </section>
+
+          <section class="panel detail-panel" id="detail-panel">
+            <div id="detail-empty" class="detail-empty"><span class="empty-illustration">✦</span><h2>Chọn một mục tiêu để đi sâu hơn</h2><p>Một mục tiêu lớn sẽ rõ ràng hơn khi được chia thành các mục tiêu nhỏ.</p></div>
+            <div id="detail-content" hidden></div>
+          </section>
+        </section>
+      </div>
+
+      <section class="backup-strip panel">
+        <div><span class="section-kicker">TÀI SẢN CỦA BẠN</span><h2>Giữ lại tiến bộ của mình</h2><p>Xuất một bản sao để dữ liệu luôn nằm trong tay bạn.</p></div>
+        <div class="backup-actions"><button class="secondary-button" id="export-data">↓ Xuất dữ liệu</button><button class="secondary-button" id="import-data">↑ Nhập dữ liệu</button><input id="import-file" type="file" accept="application/json" hidden></div>
+      </section>
+    </main>
+    <footer><span>nhịp tiến / 01</span><span>local-first · riêng tư · không phí</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+  <script>document.querySelector('#today-label').textContent = new Intl.DateTimeFormat('vi-VN', { weekday: 'long', day: '2-digit', month: 'long' }).format(new Date());</script>
+  <script>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));</script>
+</body>
+</html>

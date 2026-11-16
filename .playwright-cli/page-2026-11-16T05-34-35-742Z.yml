@@ -1,0 +1,132 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - banner [ref=f3e3]:
+      - link "Nhịp tiến - Trang chủ" [ref=f3e4] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f3e5]: ↗
+        - generic [ref=f3e6]:
+          - strong [ref=f3e7]: nhịp tiến
+          - generic [ref=f3e8]: personal progress desk
+      - generic [ref=f3e9]:
+        - generic [ref=f3e10]: Dữ liệu chỉ lưu trên máy
+        - button "Xóa dữ liệu cục bộ" [ref=f3e12] [cursor=pointer]: ⋯
+    - main [ref=f3e13]:
+      - generic [ref=f3e14]:
+        - generic [ref=f3e15]:
+          - paragraph [ref=f3e16]: BẢNG ĐIỀU KHIỂN CÁ NHÂN • Thứ Hai, 16 tháng 11
+          - heading [level=1] [ref=f3e17]:
+            - text: Điều quan trọng
+            - emphasis [ref=f3e18]: đang tiến lên.
+          - paragraph [ref=f3e19]: Một nơi yên tĩnh để biến những điều bạn muốn làm thành những bước có thể bắt đầu ngay hôm nay.
+        - generic [ref=f3e24]: "01"
+      - region "Tổng quan tiến độ" [ref=f3e25]:
+        - article [ref=f3e26]:
+          - generic [ref=f3e27]:
+            - generic [ref=f3e28]: ✦
+            - generic [ref=f3e29]: Tổng tiến độ
+          - strong [ref=f3e30]: 0% tổng tiến độ
+          - paragraph [ref=f3e32]: Tiến bộ nhỏ vẫn là tiến bộ.
+        - article [ref=f3e33]:
+          - generic [ref=f3e34]:
+            - generic [ref=f3e35]: ◎
+            - generic [ref=f3e36]: Đang theo đuổi
+          - strong [ref=f3e37]: "0"
+          - paragraph [ref=f3e38]: mục tiêu đang mở
+        - article [ref=f3e39]:
+          - generic [ref=f3e40]:
+            - generic [ref=f3e41]: ✓
+            - generic [ref=f3e42]: Đã hoàn thành
+          - strong [ref=f3e43]: "0"
+          - paragraph [ref=f3e44]: cột mốc đã đi qua
+        - article [ref=f3e45]:
+          - generic [ref=f3e46]:
+            - generic [ref=f3e47]: ◌
+            - generic [ref=f3e48]: Tổng mục tiêu
+          - strong [ref=f3e49]: "0"
+          - paragraph [ref=f3e50]: ý tưởng đang có hình hài
+      - generic [ref=f3e51]:
+        - complementary [ref=f3e52]:
+          - generic [ref=f3e53]:
+            - generic [ref=f3e54]:
+              - generic [ref=f3e55]:
+                - text: NHỊP HÔM NAY
+                - heading "Việc gần nhất" [level=2] [ref=f3e56]
+              - generic [ref=f3e57]: "01"
+            - paragraph [ref=f3e58]: Chưa có mục tiêu gần hạn. Bạn có thể bắt đầu bằng một mục tiêu nhỏ.
+          - generic [ref=f3e59]:
+            - generic [ref=f3e60]:
+              - generic [ref=f3e61]:
+                - text: BẮT ĐẦU TỪ ĐÂY
+                - heading "Thêm mục tiêu mới" [level=2] [ref=f3e62]
+              - generic [ref=f3e63]: +
+            - generic [ref=f3e64]:
+              - generic [ref=f3e65]:
+                - generic [ref=f3e66]: Tên mục tiêu
+                - textbox "Tên mục tiêu" [ref=f3e67]:
+                  - /placeholder: "Ví dụ: Hoàn thành portfolio cá nhân"
+              - generic [ref=f3e68]:
+                - generic [ref=f3e69]: Mô tả ngắn (không bắt buộc)
+                - textbox "Mô tả ngắn (không bắt buộc)" [ref=f3e70]:
+                  - /placeholder: Vì sao điều này quan trọng với bạn?
+              - generic [ref=f3e71]:
+                - generic [ref=f3e72]:
+                  - generic [ref=f3e73]: Loại mục tiêu
+                  - combobox "Loại mục tiêu" [ref=f3e74]:
+                    - option "Ngắn hạn" [selected]
+                    - option "Dài hạn"
+                - generic [ref=f3e75]:
+                  - generic [ref=f3e76]: Ưu tiên
+                  - combobox "Ưu tiên" [ref=f3e77]:
+                    - option "Cao"
+                    - option "Vừa" [selected]
+                    - option "Thấp"
+              - generic [ref=f3e78]:
+                - generic [ref=f3e79]: Hạn hoàn thành (không bắt buộc)
+                - textbox "Hạn hoàn thành (không bắt buộc)" [ref=f3e80]
+              - button "Lưu mục tiêu ↗" [ref=f3e82] [cursor=pointer]
+        - generic [ref=f3e83]:
+          - generic [ref=f3e84]:
+            - generic [ref=f3e85]:
+              - generic [ref=f3e86]:
+                - text: BỨC TRANH LỚN
+                - heading "Mục tiêu của bạn" [level=2] [ref=f3e87]
+              - generic [ref=f3e88]: 0 mục tiêu
+            - generic [ref=f3e89]:
+              - generic [ref=f3e90]:
+                - generic: ⌕
+                - textbox "⌕" [ref=f3e91]:
+                  - /placeholder: Tìm mục tiêu...
+              - combobox "Lọc theo trạng thái" [ref=f3e92]:
+                - option "Mọi trạng thái" [selected]
+                - option "Đang làm"
+                - option "Quá hạn"
+                - option "Đã xong"
+              - combobox "Lọc theo loại" [ref=f3e93]:
+                - option "Mọi loại" [selected]
+                - option "Ngắn hạn"
+                - option "Dài hạn"
+              - combobox "Lọc theo ưu tiên" [ref=f3e94]:
+                - option "Mọi ưu tiên" [selected]
+                - option "Ưu tiên cao"
+                - option "Ưu tiên vừa"
+                - option "Ưu tiên thấp"
+            - generic [ref=f3e95]:
+              - generic [ref=f3e96]: ○
+              - heading "Chưa có mục tiêu phù hợp" [level=3] [ref=f3e97]
+              - paragraph [ref=f3e98]: Hãy thử đổi bộ lọc hoặc thêm một mục tiêu mới ở bên trái.
+          - generic [ref=f3e100]:
+            - generic [ref=f3e101]: ✦
+            - heading "Chọn một mục tiêu để đi sâu hơn" [level=2] [ref=f3e102]
+            - paragraph [ref=f3e103]: Một mục tiêu lớn sẽ rõ ràng hơn khi được chia thành các mục tiêu nhỏ.
+      - generic [ref=f3e104]:
+        - generic [ref=f3e105]:
+          - text: TÀI SẢN CỦA BẠN
+          - heading "Giữ lại tiến bộ của mình" [level=2] [ref=f3e106]
+          - paragraph [ref=f3e107]: Xuất một bản sao để dữ liệu luôn nằm trong tay bạn.
+        - generic [ref=f3e108]:
+          - button "↓ Xuất dữ liệu" [ref=f3e109] [cursor=pointer]
+          - button "↑ Nhập dữ liệu" [ref=f3e110] [cursor=pointer]
+    - contentinfo [ref=f3e111]:
+      - generic [ref=f3e112]: nhịp tiến / 01
+      - generic [ref=f3e113]: local-first · riêng tư · không phí
+  - status

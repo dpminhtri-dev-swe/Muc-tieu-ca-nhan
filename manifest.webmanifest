@@ -1,0 +1,18 @@
+{
+  "name": "Nhịp tiến — Mục tiêu cá nhân",
+  "short_name": "Nhịp tiến",
+  "description": "Theo dõi mục tiêu cá nhân, mục tiêu nhỏ và tiến độ mỗi ngày.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f2e9",
+  "theme_color": "#345b49",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - banner [ref=f1e3]:
+      - link "Nhịp tiến - Trang chủ" [ref=f1e4] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f1e5]: ↗
+        - generic [ref=f1e6]:
+          - strong [ref=f1e7]: nhịp tiến
+          - generic [ref=f1e8]: personal progress desk
+      - generic [ref=f1e9]:
+        - generic [ref=f1e10]: Dữ liệu chỉ lưu trên máy
+        - button "Xóa dữ liệu cục bộ" [ref=f1e12] [cursor=pointer]: ⋯
+    - main [ref=f1e13]:
+      - generic [ref=f1e14]:
+        - generic [ref=f1e15]:
+          - paragraph [ref=f1e16]: BẢNG ĐIỀU KHIỂN CÁ NHÂN • Thứ Hai, 16 tháng 11
+          - heading [level=1] [ref=f1e17]:
+            - text: Điều quan trọng
+            - emphasis [ref=f1e18]: đang tiến lên.
+          - paragraph [ref=f1e19]: Một nơi yên tĩnh để biến những điều bạn muốn làm thành những bước có thể bắt đầu ngay hôm nay.
+        - generic [ref=f1e24]: "01"
+      - region "Tổng quan tiến độ" [ref=f1e25]:
+        - article [ref=f1e26]:
+          - generic [ref=f1e27]:
+            - generic [ref=f1e28]: ✦
+            - generic [ref=f1e29]: Tổng tiến độ
+          - strong [ref=f1e30]: 0% tổng tiến độ
+          - paragraph [ref=f1e32]: Tiến bộ nhỏ vẫn là tiến bộ.
+        - article [ref=f1e33]:
+          - generic [ref=f1e34]:
+            - generic [ref=f1e35]: ◎
+            - generic [ref=f1e36]: Đang theo đuổi
+          - strong [ref=f1e37]: "1"
+          - paragraph [ref=f1e38]: mục tiêu đang mở
+        - article [ref=f1e39]:
+          - generic [ref=f1e40]:
+            - generic [ref=f1e41]: ✓
+            - generic [ref=f1e42]: Đã hoàn thành
+          - strong [ref=f1e43]: "0"
+          - paragraph [ref=f1e44]: cột mốc đã đi qua
+        - article [ref=f1e45]:
+          - generic [ref=f1e46]:
+            - generic [ref=f1e47]: ◌
+            - generic [ref=f1e48]: Tổng mục tiêu
+          - strong [ref=f1e49]: "1"
+          - paragraph [ref=f1e50]: ý tưởng đang có hình hài
+      - generic [ref=f1e51]:
+        - complementary [ref=f1e52]:
+          - generic [ref=f1e53]:
+            - generic [ref=f1e54]:
+              - generic [ref=f1e55]:
+                - text: NHỊP HÔM NAY
+                - heading "Việc gần nhất" [level=2] [ref=f1e56]
+              - generic [ref=f1e57]: "01"
+            - button "Học xong JavaScript cơ bản Chưa đặt hạn 0%" [ref=f1e165] [cursor=pointer]:
+              - generic [ref=f1e167]:
+                - strong [ref=f1e168]: Học xong JavaScript cơ bản
+                - generic [ref=f1e169]: Chưa đặt hạn
+              - generic [ref=f1e170]: 0%
+          - generic [ref=f1e59]:
+            - generic [ref=f1e60]:
+              - generic [ref=f1e61]:
+                - text: BẮT ĐẦU TỪ ĐÂY
+                - heading "Thêm mục tiêu mới" [level=2] [ref=f1e62]
+              - generic [ref=f1e63]: +
+            - generic [ref=f1e64]:
+              - generic [ref=f1e65]:
+                - generic [ref=f1e66]: Tên mục tiêu
+                - textbox "Tên mục tiêu" [ref=f1e67]:
+                  - /placeholder: "Ví dụ: Hoàn thành portfolio cá nhân"
+              - generic [ref=f1e68]:
+                - generic [ref=f1e69]: Mô tả ngắn (không bắt buộc)
+                - textbox "Mô tả ngắn (không bắt buộc)" [ref=f1e70]:
+                  - /placeholder: Vì sao điều này quan trọng với bạn?
+              - generic [ref=f1e71]:
+                - generic [ref=f1e72]:
+                  - generic [ref=f1e73]: Loại mục tiêu
+                  - combobox "Loại mục tiêu" [ref=f1e74]:
+                    - option "Ngắn hạn" [selected]
+                    - option "Dài hạn"
+                - generic [ref=f1e75]:
+                  - generic [ref=f1e76]: Ưu tiên
+                  - combobox "Ưu tiên" [ref=f1e77]:
+                    - option "Cao"
+                    - option "Vừa" [selected]
+                    - option "Thấp"
+              - generic [ref=f1e78]:
+                - generic [ref=f1e79]: Hạn hoàn thành (không bắt buộc)
+                - textbox "Hạn hoàn thành (không bắt buộc)" [ref=f1e80]
+              - button "Lưu mục tiêu ↗" [ref=f1e82] [cursor=pointer]
+        - generic [ref=f1e83]:
+          - generic [ref=f1e84]:
+            - generic [ref=f1e85]:
+              - generic [ref=f1e86]:
+                - text: BỨC TRANH LỚN
+                - heading "Mục tiêu của bạn" [level=2] [ref=f1e87]
+              - generic [ref=f1e88]: 1 mục tiêu
+            - generic [ref=f1e89]:
+              - generic [ref=f1e90]:
+                - generic: ⌕
+                - textbox "⌕" [ref=f1e91]:
+                  - /placeholder: Tìm mục tiêu...
+              - combobox "Lọc theo trạng thái" [ref=f1e92]:
+                - option "Mọi trạng thái" [selected]
+                - option "Đang làm"
+                - option "Quá hạn"
+                - option "Đã xong"
+              - combobox "Lọc theo loại" [ref=f1e93]:
+                - option "Mọi loại" [selected]
+                - option "Ngắn hạn"
+                - option "Dài hạn"
+              - combobox "Lọc theo ưu tiên" [ref=f1e94]:
+                - option "Mọi ưu tiên" [selected]
+                - option "Ưu tiên cao"
+                - option "Ưu tiên vừa"
+                - option "Ưu tiên thấp"
+            - article [ref=f1e171] [cursor=pointer]:
+              - generic [ref=f1e172]:
+                - generic [ref=f1e173]: Dài hạn
+                - generic [ref=f1e174]: Đang làm
+              - heading "Học xong JavaScript cơ bản" [level=3] [ref=f1e175]
+              - paragraph [ref=f1e176]: Tạo nền tảng để làm web tốt hơn
+              - generic [ref=f1e177]:
+                - generic [ref=f1e178]: ◷Chưa đặt hạn
+                - generic [ref=f1e179]: ↗Ưu tiên Cao
+              - strong [ref=f1e182]: 0%
+              - generic [ref=f1e183]:
+                - generic [ref=f1e184]: 0/1 bước hoàn thành
+                - button "Hoàn thành" [ref=f1e185]
+          - generic [ref=f1e99]:
+            - generic [ref=f1e100]:
+              - generic [ref=f1e101]: ✦
+              - heading "Chọn một mục tiêu để đi sâu hơn" [level=2] [ref=f1e102]
+              - paragraph [ref=f1e103]: Các bước nhỏ sẽ biến mục tiêu lớn thành một việc có thể làm ngay.
+            - generic [ref=f1e137]:
+              - generic [ref=f1e186]:
+                - generic [ref=f1e187]:
+                  - generic [ref=f1e188]: Mục tiêu dài hạn
+                  - heading "Học xong JavaScript cơ bản" [level=2] [ref=f1e189]
+                - button "Sửa" [ref=f1e190] [cursor=pointer]
+              - paragraph [ref=f1e191]: Tạo nền tảng để làm web tốt hơn
+              - generic [ref=f1e192]:
+                - generic [ref=f1e193]:
+                  - generic [ref=f1e194]: Trạng thái
+                  - strong [ref=f1e195]: Đang làm
+                - generic [ref=f1e196]:
+                  - generic [ref=f1e197]: Hạn hoàn thành
+                  - strong [ref=f1e198]: Chưa đặt hạn
+                - generic [ref=f1e199]:
+                  - generic [ref=f1e200]: Tiến độ
+                  - strong [ref=f1e201]: 0%
+              - generic [ref=f1e204]:
+                - generic [ref=f1e205]:
+                  - text: BƯỚC NHỎ
+                  - heading "Đi từng bước một" [level=3] [ref=f1e206]
+                - generic [ref=f1e207]: 1 bước
+              - generic [ref=f1e208]:
+                - textbox "Tên bước nhỏ" [ref=f1e209]:
+                  - /placeholder: Thêm một bước nhỏ…
+                - button "Thêm" [ref=f1e210] [cursor=pointer]
+              - generic [ref=f1e212]:
+                - checkbox "Xem khóa học JavaScript Xóa bước" [ref=f1e213]
+                - generic [ref=f1e214]: Xem khóa học JavaScript
+                - button "Xóa bước" [ref=f1e215] [cursor=pointer]: ×
+      - generic [ref=f1e104]:
+        - generic [ref=f1e105]:
+          - text: TÀI SẢN CỦA BẠN
+          - heading "Giữ lại tiến bộ của mình" [level=2] [ref=f1e106]
+          - paragraph [ref=f1e107]: Xuất một bản sao để dữ liệu luôn nằm trong tay bạn.
+        - generic [ref=f1e108]:
+          - button "↓ Xuất dữ liệu" [ref=f1e109] [cursor=pointer]
+          - button "↑ Nhập dữ liệu" [ref=f1e110] [cursor=pointer]
+    - contentinfo [ref=f1e111]:
+      - generic [ref=f1e112]: nhịp tiến / 01
+      - generic [ref=f1e113]: local-first · riêng tư · không phí
+  - status: Đã thêm mục tiêu mới.
