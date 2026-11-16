@@ -330,15 +330,31 @@
     render();
   }
 
-  function exportData() {
-    const blob = new Blob([JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), ...state }, null, 2)], { type: 'application/json' });
+  async function exportData() {
+    const filename = `muc-tieu-${new Date().toISOString().slice(0, 10)}.json`;
+    const payload = JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), ...state }, null, 2);
+    const file = new File([payload], filename, { type: 'application/json' });
+
+    // iPhone/iPad Safari works better with the native share sheet than with <a download>.
+    if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+      try {
+        await navigator.share({ files: [file], title: 'Sao lưu mục tiêu cá nhân' });
+        showToast('Đã mở bảng chia sẻ bản sao dữ liệu.');
+        return;
+      } catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+
+    const blob = new Blob([payload], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `muc-tieu-${new Date().toISOString().slice(0, 10)}.json`;
+    link.download = filename;
+    link.rel = 'noopener';
     link.click();
-    URL.revokeObjectURL(url);
-    showToast('Đã xuất bản sao dữ liệu.');
+    window.setTimeout(() => URL.revokeObjectURL(url), 10000);
+    showToast('Đã tạo file sao lưu dữ liệu.');
   }
 
   function importData(event) {

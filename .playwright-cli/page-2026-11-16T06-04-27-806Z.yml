@@ -1,0 +1,132 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Nhịp tiến - Trang chủ" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e5]: ↗
+        - generic [ref=e6]:
+          - strong [ref=e7]: nhịp tiến
+          - generic [ref=e8]: personal progress desk
+      - generic [ref=e9]:
+        - generic [ref=e10]: Dữ liệu chỉ lưu trên máy
+        - button "Xóa dữ liệu cục bộ" [ref=e12] [cursor=pointer]: ⋯
+    - main [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: BẢNG ĐIỀU KHIỂN CÁ NHÂN • Thứ Hai, 16 tháng 11
+          - heading [level=1] [ref=e17]:
+            - text: Điều quan trọng
+            - emphasis [ref=e18]: đang tiến lên.
+          - paragraph [ref=e19]: Một nơi yên tĩnh để biến những điều bạn muốn làm thành những bước có thể bắt đầu ngay hôm nay.
+        - generic [ref=e24]: "01"
+      - region "Tổng quan tiến độ" [ref=e25]:
+        - article [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: ✦
+            - generic [ref=e29]: Tổng tiến độ
+          - strong [ref=e30]: 0% tổng tiến độ
+          - paragraph [ref=e32]: Tiến bộ nhỏ vẫn là tiến bộ.
+        - article [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: ◎
+            - generic [ref=e36]: Đang theo đuổi
+          - strong [ref=e37]: "0"
+          - paragraph [ref=e38]: mục tiêu đang mở
+        - article [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: ✓
+            - generic [ref=e42]: Đã hoàn thành
+          - strong [ref=e43]: "0"
+          - paragraph [ref=e44]: cột mốc đã đi qua
+        - article [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: ◌
+            - generic [ref=e48]: Tổng mục tiêu
+          - strong [ref=e49]: "0"
+          - paragraph [ref=e50]: ý tưởng đang có hình hài
+      - generic [ref=e51]:
+        - complementary [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - text: NHỊP HÔM NAY
+                - heading "Việc gần nhất" [level=2] [ref=e56]
+              - generic [ref=e57]: "01"
+            - paragraph [ref=e58]: Chưa có mục tiêu gần hạn. Bạn có thể bắt đầu bằng một mục tiêu nhỏ.
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - text: BẮT ĐẦU TỪ ĐÂY
+                - heading "Thêm mục tiêu mới" [level=2] [ref=e62]
+              - generic [ref=e63]: +
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - generic [ref=e66]: Tên mục tiêu
+                - textbox "Tên mục tiêu" [ref=e67]:
+                  - /placeholder: "Ví dụ: Hoàn thành portfolio cá nhân"
+              - generic [ref=e68]:
+                - generic [ref=e69]: Mô tả ngắn (không bắt buộc)
+                - textbox "Mô tả ngắn (không bắt buộc)" [ref=e70]:
+                  - /placeholder: Vì sao điều này quan trọng với bạn?
+              - generic [ref=e71]:
+                - generic [ref=e72]:
+                  - generic [ref=e73]: Loại mục tiêu
+                  - combobox "Loại mục tiêu" [ref=e74]:
+                    - option "Ngắn hạn" [selected]
+                    - option "Dài hạn"
+                - generic [ref=e75]:
+                  - generic [ref=e76]: Ưu tiên
+                  - combobox "Ưu tiên" [ref=e77]:
+                    - option "Cao"
+                    - option "Vừa" [selected]
+                    - option "Thấp"
+              - generic [ref=e78]:
+                - generic [ref=e79]: Hạn hoàn thành (không bắt buộc)
+                - textbox "Hạn hoàn thành (không bắt buộc)" [ref=e80]
+              - button "Lưu mục tiêu ↗" [ref=e82] [cursor=pointer]
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - text: BỨC TRANH LỚN
+                - heading "Mục tiêu của bạn" [level=2] [ref=e87]
+              - generic [ref=e88]: 0 mục tiêu
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - generic: ⌕
+                - textbox "⌕" [ref=e91]:
+                  - /placeholder: Tìm mục tiêu...
+              - combobox "Lọc theo trạng thái" [ref=e92]:
+                - option "Mọi trạng thái" [selected]
+                - option "Đang làm"
+                - option "Quá hạn"
+                - option "Đã xong"
+              - combobox "Lọc theo loại" [ref=e93]:
+                - option "Mọi loại" [selected]
+                - option "Ngắn hạn"
+                - option "Dài hạn"
+              - combobox "Lọc theo ưu tiên" [ref=e94]:
+                - option "Mọi ưu tiên" [selected]
+                - option "Ưu tiên cao"
+                - option "Ưu tiên vừa"
+                - option "Ưu tiên thấp"
+            - generic [ref=e95]:
+              - generic [ref=e96]: ○
+              - heading "Chưa có mục tiêu phù hợp" [level=3] [ref=e97]
+              - paragraph [ref=e98]: Hãy thử đổi bộ lọc hoặc thêm một mục tiêu mới ở bên trái.
+          - generic [ref=e100]:
+            - generic [ref=e101]: ✦
+            - heading "Chọn một mục tiêu để đi sâu hơn" [level=2] [ref=e102]
+            - paragraph [ref=e103]: Một mục tiêu lớn sẽ rõ ràng hơn khi được chia thành các mục tiêu nhỏ.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - text: TÀI SẢN CỦA BẠN
+          - heading "Giữ lại tiến bộ của mình" [level=2] [ref=e106]
+          - paragraph [ref=e107]: Xuất một bản sao để dữ liệu luôn nằm trong tay bạn.
+        - generic [ref=e108]:
+          - button "↓ Xuất / chia sẻ" [active] [ref=e109] [cursor=pointer]
+          - button "↑ Nhập dữ liệu" [ref=e110] [cursor=pointer]
+    - contentinfo [ref=e111]:
+      - generic [ref=e112]: nhịp tiến / 01
+      - generic [ref=e113]: local-first · riêng tư · không phí
+  - status: Đã tạo file sao lưu dữ liệu.

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nhip-tien-v1';
+const CACHE_NAME = 'nhip-tien-v2';
 const APP_SHELL = ['./', './index.html', './styles.css?v=3', './app.js', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', (event) => {
